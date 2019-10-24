@@ -17,18 +17,19 @@ h2 {
     font-size: 130%;
 }
 
-.guarantee {
-    border-color: black;
-    border-width: 1px;
-    border-style: dotted;
+#guarantee {
+    border-color: #ffffff;
+    border-width: 3px;
+    border-style: dashed;
+    border-radius: 15px;
     background-color: #007e7e;
     background-image: url(images/background.gif);
     background-repeat: no-repeat;
     background-position: top left;
     padding: 25px;
     padding-left: 80px;
-    ;
     margin: 30px;
+    margin-right: 250px;
     line-height: 1.9em;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
