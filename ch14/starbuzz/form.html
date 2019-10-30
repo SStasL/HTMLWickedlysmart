@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>The Starbuzz Bean Machine</title>
+</head>
+
+<body>
+
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out the form below and click submit to order</h2>
+
+    <form action="http://starbuzzcoffeee.comprocessorder.php" method="POST">
+        <p>
+            Выберите кофе:
+            <select name="beans">
+            <option value="Смесь">Домашняя смесь</option>
+            <option value="Боливия">Боливия</option>
+            <option value="Гватемала">Гватемала</option>
+            <option value="Кения">Кения</option>
+            </select>
+        </p>
+        <p> Ship to: <br> Name: <input type="text" name="name"> <br> Address: <input type="text" name="address"> <br> City: <input type="text" name="city"> <br> Country: <input type="text" name="state"> <br> ZIP code: <input type="text" name="zip"> <br> Phone:
+            <input type="tel" name="phone"> <br>
+        </p>
+        <p>
+            <input type="submit" value="Order now">
+        </p>
+    </form>
+
+</body>
+
+</html>
