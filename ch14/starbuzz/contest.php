@@ -1,7 +1,17 @@
 <?php
 if ($_POST) {
-	$firstname = $_POST["firstname"];
-	$lastname = $_POST["lastname"];
+	$beans = $_POST["beans"];
+	$beantype = $_POST["beantype"];
+	$bags = $_POST["bags"];
+	$date = $_POST["date"];
+	$extras = $_POST["extras[]"];
+	$name = $_POST["name"];
+	$address = $_POST["address"];
+	$city = $_POST["city"];
+	$state = $_POST["state"];
+	$zip = $_POST["zip"];
+	$phone = $_POST["phone"];
+	
 ?>
 
 <!DOCTYPE html>
@@ -28,11 +38,14 @@ div {
 
 <div>
 <p>
-Thanks, <strong><?php print($firstname); print(" "); print($lastname); ?></strong>,
-for entering the Head First HTML and CSS Chapter 14 contest.
-</p>
-<p>
-If you win something, you'll be the first to know.
+	Starbuzz Bean Machine благодарит Вас, <strong><?php print($name);?></strong>, за Ваш заказ.
+	Заказанные Вами <strong><?php print($bags);?></strong> пакетика <strong><?php print($beantype);?></strong> кофе <strong><?php print($beans);?></strong> будут отправлены по адреасу: <br>
+	<strong><?php print($address);?></strong><br>
+	<strong><?php print($city);?></strong><br>
+	<strong><?php print($state);?></strong>
+	<strong><?php print($zip);?></strong><br>
+	<strong><?php print($phone);?></strong><br>
+	и будут доставлены к <strong><?php print($date);?></strong><br>
 </p>
 </div>
 
